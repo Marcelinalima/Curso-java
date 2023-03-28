@@ -6,4 +6,5 @@
  *
  */
 module orientacaoobj {
+	requires java.desktop;
 }

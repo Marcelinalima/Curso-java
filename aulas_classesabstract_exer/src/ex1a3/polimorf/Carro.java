@@ -11,15 +11,15 @@ public class Carro {
 	
 }
 
-public void acelera(int aceleracao) {
+  public void acelera(int aceleracao) {
 	setVelocidade(getVelocidade() + aceleracao);
 }
 
-public int getVelocidade() {
+  public int getVelocidade() {
 	return velocidade;
 }
 
-public void setVelocidade(int velocidade) {
+  public void setVelocidade(int velocidade) {
 	this.velocidade = velocidade;
 }
 

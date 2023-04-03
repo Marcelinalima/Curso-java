@@ -1,32 +1,32 @@
 package o_o_exer_1_2;
 
+import java.text.DecimalFormat;
+import java.util.Locale;
 
+@SuppressWarnings("unused")
 public class Invoice {
-	
-	private int codigoItem;
+
+    private int codigoItem;
     private String descricaoItem;
-    private int quantidadeItemComprada;
-    private double precoItemUnidade;
-    
-    public Invoice(int codigoItem, String descricaoItem, int quantidadeItemComprada, double precoitemUnidade, double precoItemUnidade) {
-        this.codigoItem= codigoItem;
+    private int quantidadeCompradaItem;
+    private double precoUnitarioItem;
+
+    public Invoice(int codigoItem, String descricaoItem, int quantidadeCompradaItem, double precoUnitarioItem) {
+        this.codigoItem = codigoItem;
         this.descricaoItem = descricaoItem;
-        if(quantidadeItemComprada < 0)
-            this.quantidadeItemComprada = 0;
-            
-        else this.quantidadeItemComprada = quantidadeItemComprada;
-        
-        if(precoItemUnidade < 0)
-        	this.precoItemUnidade = 0.0;
-         else this.precoItemUnidade = precoItemUnidade;
-        
+        if(quantidadeCompradaItem < 0)
+            this.quantidadeCompradaItem = 0;
+        else this.quantidadeCompradaItem = quantidadeCompradaItem;
+        if(precoUnitarioItem < 0)
+            this.precoUnitarioItem = 0.0;
+        else this.precoUnitarioItem = precoUnitarioItem;
     }
 
-    public int getcodigoItem() {
-        return  codigoItem;
+    public int getCodigoItem() {
+        return codigoItem;
     }
 
-    public void setcodigoItem(int codigoItem) {
+    public void setCodigoItem(int codigoItem) {
         this.codigoItem = codigoItem;
     }
 
@@ -38,28 +38,24 @@ public class Invoice {
         this.descricaoItem = descricaoItem;
     }
 
-    public int getquantidadeItemComprada() {
-        return quantidadeItemComprada;
+    public int getQuantidadeCompradaItem() {
+        return quantidadeCompradaItem;
     }
 
-    public void setQuantidadeItemComprada(int quantidadeItemComprada) {
-        this.quantidadeItemComprada = quantidadeItemComprada;
+    public void setQuantidadeCompradaItem(int quantidadeCompradaItem) {
+        this.quantidadeCompradaItem = quantidadeCompradaItem;
     }
 
-    public double getPrecoItemUnidade() {
-        return  precoItemUnidade;
+    public double getPrecoUnitarioItem() {
+        return precoUnitarioItem;
     }
 
-    public void setPrecoItemUnidade(double precoItemUnidade) {
-        this.precoItemUnidade=  precoItemUnidade;
+    public void setPrecoUnitarioItem(double precoUnitarioItem) {
+        this.precoUnitarioItem = precoUnitarioItem;
     }
 
-    public double getValorInvoice() {
-        return getquantidadeItemComprada() *  getPrecoItemUnidade();
+    public double getInvoiceAmount(){
+
+        return getQuantidadeCompradaItem() * getPrecoUnitarioItem();
     }
-
-        
-
 }
-
-        

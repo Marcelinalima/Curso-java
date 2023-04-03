@@ -5,7 +5,6 @@ public class ContaCorrente extends Cliente {
 	private double saldo;
 	
 	
-	
 	public ContaCorrente() {}
 
 	public ContaCorrente(String nome, double saldo) {

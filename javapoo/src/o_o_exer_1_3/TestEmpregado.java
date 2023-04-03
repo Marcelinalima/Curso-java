@@ -6,7 +6,7 @@ public class TestEmpregado {
 
 	public static void main(String[] args) {
 
-		//Criei um DecimalFormat para fazer a formatação de moeda corretamente
+		//Crie um DecimalFormat para fazer a formatação de moeda corretamente
         DecimalFormat df = new DecimalFormat();
         df.applyPattern("R$ #,##0.00");
 
@@ -17,7 +17,7 @@ public class TestEmpregado {
         System.out.println("Empregado: " + empregado2.getNome() + " " + empregado2.getSobrenome() + " Salário mensal: " + df.format(empregado2.getSalarioMensal())  + "Salário anual: " + df.format(empregado2.getSalarioAnual()));
 
         //Pede para darmos a cada empregado um aumento de 10%
-        //Para isso foi criado um método na classe empregado que fará esse calculo e setará o novo salario de cada empresado
+        //Para isso foi criado um método na classe empregado que fará esse calculo e setará o novo salario de cada empregado
         empregado1.setAumento();
         System.out.println("Empregado: " + empregado1.getNome());
         System.out.println("Novo salário mensal: " + df.format(empregado1.getSalarioMensal()));

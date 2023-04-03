@@ -1,6 +1,6 @@
 package o_o_exer_1_4;
 
-public class TestData {
+public class DataTest {
 
 	public static void main(String[] args) {
 		
